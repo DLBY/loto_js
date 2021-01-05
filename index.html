@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex items-center justify-center h-screen">
+    
+      <form class="flex flex-col bg-white rounded shadow-lg p-12 mt-12" action="">
+        <label class="font-semibold text-xs" for="firstname">Prénom</label>
+        <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text" id="firstname">
+        <label class="font-semibold text-xs" for="lastname">Nom</label>
+        <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="text" id="lastname">
+        <label class="font-semibold text-xs" for="email">Mail</label>
+        <input class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2" type="email" id="email">
+
+        <label class="font-semibold text-xs mt-3" for="lotoNumbers">Numéros du loto (6 numéros)</label>
+        <div class="flex flex-row justify-around">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlength="1" min="1" max="49" id="numb1">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlengt2h="1" min="1" max="49" id="numb2">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlength="1" min="1" max="49" id="numb3">
+      </div>
+      <div class="flex flex-row justify-around">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlength="1" min="1" max="49" id="numb4">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlength="1" min="1" max="49" id="numb5">
+        <input class="flex items-center h-10 px-1 w-12 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2"type="number" maxlength="2" minlength="1" min="1" max="10" id="numb6">
+      </div>
+        <input type="submit" id="submit" value ="Jouer" class="flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700">
+
+      </form>
+      
+      </div>
+    <script src="index.js" async defer></script>
+  </body>
+</html>
